@@ -22,6 +22,12 @@ pipeline {
           }
         }
 
+        stage('log environment variables') {
+          steps {
+            sh 'printenv'
+          }
+        }
+
       }
     }
 
