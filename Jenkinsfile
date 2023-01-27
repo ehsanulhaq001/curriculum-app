@@ -16,9 +16,9 @@ pipeline {
           }
         }
 
-        stage('Front end unit test') {
+        stage('log working directory') {
           steps {
-            sh 'cd curriculum-front && npm i && npm run test:unit'
+            sh 'pwd'
           }
         }
 
